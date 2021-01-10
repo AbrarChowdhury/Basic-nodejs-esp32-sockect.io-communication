@@ -23,7 +23,6 @@ io.on('connection', ( socket ) => {
     //executes every 500ms    
     setInterval(()=>{
         socket.emit('vsm',"hello esp");//emits for the clients on the "vsm event"
-        count++ 
     },500)
     
     //executes when the client disconnects
